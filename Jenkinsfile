@@ -3,11 +3,6 @@ pipeline{
     agent any
 
     stages {
-
-        stage ('GIT Checkout') {
-            checkout scm
-            
-        }
         
         stage ('Compile Stage') {
 
