@@ -4,11 +4,16 @@ pipeline{
 
     stages {
 
+        stage ('GIT Checkout') {
+            checkout scm
+            
+        }
+        
         stage ('Compile Stage') {
 
             steps {
 
-                withMaven(maven: 'maven_3_5_0') {
+                withMaven(maven: 'maven_3_6_3') {
                     sh 'mvn clean install'
 
                 }
@@ -19,7 +24,7 @@ pipeline{
 
             steps {
 
-                withMaven(maven: 'maven_3_5_0') {
+                withMaven(maven: 'maven_3_6_3') {
                     sh 'mvn test'
 
                 }
