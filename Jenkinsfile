@@ -1,6 +1,12 @@
 pipeline{
 
     agent any
+    
+    options {
+        sidebarLinks([
+            [displayName: 'Google', iconFileName: 'userContent/favicon.ico', urlName: 'https://google.com/']
+        ])
+    }
 
     stages {
         
