@@ -4,7 +4,7 @@ pipeline{
     
     options {
         sidebarLinks([
-            [displayName: 'Google', iconFileName: 'userContent/favicon.ico', urlName: 'https://google.com/']
+            [displayName: 'Google', iconFileName: 'userContent/Google.jpg', urlName: 'https://google.com/']
         ])
     }
 
